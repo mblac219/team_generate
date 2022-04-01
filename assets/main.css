@@ -1,6 +1,12 @@
 *{
     box-sizing: border-box;
 }
-th {
+#title {
+    border: solid black 1px;
     background-color: red;
+}
+.container {
+    display: inline;
+
+    ;
 }

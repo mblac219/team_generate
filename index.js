@@ -31,40 +31,50 @@ function buildTeam ( ) {
         },
         {
             type: 'input',
-            message: 'what is your employee name?',
-            name: 'employee'
+            message: 'What is the github username?',
+            name: 'github'
+        },
+        {
+             type: 'input',
+             message: 'what is your intern name?',
+             name: 'intern'
         },
         {
             type: 'input',
-            message: 'what is your employee id?',
+            message: 'what is your intern id?',
             name: 'id'
         },
         {
             type: 'input',
-            message: 'what is your employee email?',
+            message: 'what is your intern email?',
             name: 'email'
         },
         {
-            type: 'list',
-            message: 'Would you like to add another team member?',
-            name: 'teamMember',
-            choices: [ 'yes', 'no']
+            type: 'input',
+            message: 'What school did the intern attend?',
+            name: 'school'
         },
-    ]).then(response => {
-        if(response === true) {
-            getEmployeeData( ) 
-        }else{
-            fs.writeFile()
-        }
-
         {
-            type: 'list',
-            message: 'what is your employee role?',
-            name: 'role',
-            choices: [ 'Engineer', 'Intern']
-        } 
-    ])         
-}
+            type: 'input',
+            message: 'What is your name of your engineer?',
+            name: 'name'
+        },
+        {
+            type: 'input',
+            message: 'What is the id of your engineer?',
+            name: 'id'
+        },
+        {
+            type: 'input',
+            message: 'What is the email for your engineer?',
+            name: 'email'
+        },
+        {
+            type: 'input',
+            message: 'What is the github username for your engineer?',
+            name: 'school'
+        },
+    ])
+ };
     
-
-buildTeam( )
+    
